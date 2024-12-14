@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>画像リサイズツール</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    canvas {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>画像リサイズツール</h1>
+  <input type="file" id="imageInput" accept="image/*">
+  <br><br>
+  <label for="width">幅(px): </label>
+  <input type="number" id="width" placeholder="新しい幅">
+  <button id="resizeButton">リサイズ</button>
+  <br><br>
+  <canvas id="canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
